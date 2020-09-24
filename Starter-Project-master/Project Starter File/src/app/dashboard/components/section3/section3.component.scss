@@ -1,5 +1,28 @@
 
 :host{
+
+    @mixin header-design($color,$font-size,$line-height,$margin-bottom,
+    $letter-spacing) {
+        color: $color;
+        font-size: $font-size;
+        line-height: $line-height;
+        margin-bottom: margin-bottom;
+        letter-spacing: $letter-spacing;
+    }
+
+    @mixin description-design($color,$font-size,$line-height) {
+        color:$color;
+        line-height: $line-height;
+        font-size: $font-size,;
+    }
+
+    @mixin commonApproveAndRefuse{
+        padding: 6px;
+        border-radius:25px;
+        border: 1px solid;
+        cursor: pointer;
+    }
+
      .circle-sm{
         height: 30px;
         width:30px;
@@ -19,29 +42,17 @@
             color: #fff;
         }
     }
-
-   
-
-   
-    
+ 
     .header{
         h5{
-            color: #3b3b3b;
-            font-size: 16px;
-            line-height: 20px;
-            margin-bottom: 4px;
-            letter-spacing: 1.2px;
+            @include header-design(#3b3b3b,16px,20px,4px,1.2px);
         }
     }
 
   
 
     .title{
-        color: #3b3b3b;
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 3px;
-        letter-spacing: 1.2px;
+        @include header-design(#3b3b3b,14px,20px,3px,1.2px);
     }
     
   
