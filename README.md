@@ -1,1 +1,0 @@
-# selise-school-design
