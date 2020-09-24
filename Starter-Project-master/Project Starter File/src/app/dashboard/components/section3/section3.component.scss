@@ -1,0 +1,80 @@
+
+:host{
+     .circle-sm{
+        height: 30px;
+        width:30px;
+        border-radius: 50%;
+        min-width: 30px;
+        color: seagreen;
+
+        .mat-icon-sm {
+            background-repeat: no-repeat;
+            display: inline-block;
+            fill: currentColor;
+            height: 14px;
+            width: 17px;
+        }
+        mat-icon{
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+
+   
+
+   
+    
+    .header{
+        h5{
+            color: #3b3b3b;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 4px;
+            letter-spacing: 1.2px;
+        }
+    }
+
+  
+
+    .title{
+        color: #3b3b3b;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 3px;
+        letter-spacing: 1.2px;
+    }
+    
+  
+   
+    .month-name{
+        font-size: 12px;
+        color: #858585;
+    }
+   
+    .secondary-color{
+        color: #858585;
+    }
+    
+    .blog-post{
+        background-color: #fff;
+    }
+
+    .blog-post-img {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 240px;
+    }
+
+    .blog-post-description {
+        h3 {
+            color: #3b3b3b;
+        }
+
+        p {
+            font-family: 'Muli', sans-serif;
+            color: #858585;
+        }
+    }
+   
+}

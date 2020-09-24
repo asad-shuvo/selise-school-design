@@ -1,0 +1,84 @@
+<div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="16px" class="content mt-32 mb-32 mr-16">
+    <div fxFlex.gt-sm="70%" fxFlex="100%">
+        <mat-card class="basic-card">
+             <div fxLayout.gt-sm="row" fxLayoutGap="16px" fxLayoutAlign="space-between end"  class="mb-12 mt-4" ngClass.gt-sm="mb-32">
+                <div fxLayout="row">
+                    <div class="header">
+                        <h5>Projects of the Month </h5>
+                    </div>
+                </div>
+                <div class="month-name">
+                    <h2>January</h2>
+                </div>
+            </div>
+            <div fxHide.xs fxHide.sm fxLayout="row" fxLayoutAlign="space-between center">
+                <div class="ml-12 mb-20" fxFlex="100%" fxLayout="row">
+                     <div fxFlex="33%">
+                         <div>Assaigned</div>
+                     </div>
+                     <div fxFlex="33%">
+                         <div>Name</div>
+                     </div>
+                     <div fxFlex="20%">
+                         <div>Priority</div>
+                     </div>
+                     <div fxFlex="14%">
+                         <div>Budget</div>
+                     </div>
+                </div>
+                <mat-divider fxHide.xs fxHide.sm  class="mt-20"></mat-divider>
+             </div> 
+             <div *ngFor="let item of projectData; let ind = index;" fxLayout="row" fxLayoutAlign="space-between center" class="mb-16">
+                <div class="ml-12 mb-12 secondary-color" fxFlex="100%" fxLayout.gt-sm="row" fxLayout="column">
+                  <div fxFlex="33%" ngClass.lt-md="mb-12">
+                      <div fxHide.gt-sm>Assaigned</div>
+                    <div fxLayout.gt-sm="row" fxLayout="column">
+                        <div class="circle-sm circle-success mr-24 mb-12" fxLayoutAlign="center center">
+                            <mat-icon class="mat-icon-sm">perm_identity</mat-icon>
+                        </div>
+                        <div>{{item.Assaigned}}</div>
+                    </div>  
+                  </div>
+                  <div fxFlex="33%" ngClass.lt-md="mb-12">
+                    <div fxHide.gt-sm>Name</div>
+                    <div>{{item.Name}}</div>
+                  </div>
+                  <div fxFlex="20%" ngClass.lt-md="mb-12">
+                    <div fxHide.gt-sm>Priority</div>
+                    <div><span class="box-design">{{item.Priority}}</span></div>
+                  </div>
+                  <div fxFlex="14%" ngClass.lt-md="mb-12">
+                    <div fxHide.gt-sm class="mr-24">Budget</div>
+                    <div>{{item.Budget}}</div>
+                  </div>
+               </div>   
+               <mat-divider fxHide.xs fxHide.sm  class="mt-20"></mat-divider>
+                
+             </div> 
+        </mat-card>
+    </div>
+
+    <div fxFlex.gt-sm="30%" fxFlex="100%">
+        <mat-card class="basic-card">
+            <div class="blog-post">
+                <div class="blog-post-img" [ngStyle]="{'background-image':'url('+blogImg+')'}"></div>
+                <div class="blog-post-description p-16">
+                    <h3 class="mb-16 line-height-24 primary-text title" 
+                    ngClass.gt-sm="font-size-20"
+                    ngClass.sm="font-size-16"
+                    ngClass.xs="font-size-16"
+                    >Business Development Of Rules</h3>
+                    <span class="box-design">Technology</span>
+                    <p class="mt-32 secondary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit
+                        deserunt assumenda rerum sed architecto consectetur ab, totam quas earum.</p>
+                    <div fxLayout="row" fxLayoutAlign="space-between center" class="mt-32">
+                        <a href="">Read more</a>
+                        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                            <mat-icon>share</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>
